@@ -1,0 +1,101 @@
+html, body {
+    height: 100%; /* Ensure the body takes the full height */
+    margin: 0; /* Remove default margin */
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Make the wrapper take at least the full height of the viewport */
+}
+
+.container {
+    flex: 1; /* Allow the container to grow and take available space */
+}
+
+.footer {
+    background-color: #007BFF; /* Same color as the navbar */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Padding around the footer */
+    width: 100%; /* Full width */
+}
+.navbar {
+    background-color: #007BFF;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #000000;
+}
+.contact-info {
+    margin: 20px 0;
+    text-align: center; /* Center the buttons */
+}
+
+.contact-button {
+    background: linear-gradient(45deg, #ff6b6b00, #f0659600); /* Gradient background */
+    color: rgb(10, 9, 9); /* Text color */
+    border:#000000; /* No border */
+    border-radius: 25px; /* More rounded corners */
+    padding: 10px 30px; /* Increased padding for bigger buttons */
+    margin: 20px; /* Space between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Larger font size */
+    transition: background 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.contact-button:hover {
+    background: linear-gradient(45deg, #f06595, #ff6b6b); /* Reverse gradient on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.contact-button:active {
+    transform: translateY(0); /* Reset lift effect when clicked */
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent blue */
+    padding: 30px;
+    text-align: center;
+    width: 100%; /* Full width */
+    position: relative; /* Fixed position to stay at the top */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it stays above other content */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.footer {
+    background-color: rgba(0, 123, 255, 0); /* Semi-transparent blue */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 10px; /* Padding around the footer */
+    width: 100%; /* Full width */
+    position: relative; /* Positioning */
+    bottom: 0; /* Stick to the bottom */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+h1{
+    text-align: center;
+}
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(15, 124, 219);
+}
